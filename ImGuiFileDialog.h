@@ -184,9 +184,12 @@ struct IGFD_Thumbnail_Info {
 };
 #endif  // USE_THUMBNAILS
 
-#include <cstdint>
+#ifndef __cplusplus
+#include <stdint.h>
+#endif
 
 #ifdef __cplusplus
+#include <cstdint>
 
 #ifndef IMGUI_DEFINE_MATH_OPERATORS
 #define IMGUI_DEFINE_MATH_OPERATORS
